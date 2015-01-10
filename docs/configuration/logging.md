@@ -6,7 +6,7 @@ layout: docs-default
 
 IdentityServer uses logging everywhere (well - that's the plan at least, we have some gaps right now).
 
-The logging mechanism and output is determined by the hosting application via setting a `LogProvider` (e.g. in your `startup` class):
+The logging mechanism and output is determined by the hosting application via setting a `LogProvider` (e.g. in `Configuration(IAppBuilder app)` method of your `startup` class):
 
 ```csharp
 LogProvider.SetCurrentLogProvider(new DiagnosticsTraceLogProvider());
